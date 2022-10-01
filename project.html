@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title></title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<div id="app">
+	<header><span class="product"><em>IMMO</em>RECHNER</span></header>
+	<div class="grid">
+		<main class="pmain page1 page1-main ">
+			<section class="page-1">
+				<h1 class="head">Berechne Deinen Vermögensaufbau mit Immobilien</h1>
+				<div class="p1grid">
+					<canvas id="canvas1" height="700" width="2000"></canvas>
+					<div class="p1price p1-fade">
+						<div class="price-g"><label>Kaufpreis</label>
+
+							<input id="price" class="new btxt wide" value="200.000" onkeypress='return num(event)'>
+							<span class="btxt">€</span>
+						</div>
+						<div class="capital-g"><label>Eigenkapital</label>
+							<input id="capital" class="new btxt wide" value="0" onkeypress='return num(event)'><span class="btxt">€</span></div></div>
+<div class="p1amort p1-fade">
+<input id="amrt" type="number" class="new  btxt sinp" value="2"	onkeypress='return num(event)'><span class="btxt">%</span><span>Tilgung p.A.</span>
+					</div>
+					<div class="p1app p1-fade">
+						<input id="aprct" type="number" class="new btxt sinp" value="2"
+							onkeypress='return num(event)'><span class="btxt">%</span><span>Wertentwicklung
+							p.A.</span>
+					</div>
+					<div class="p1dur p1-fade">
+						<input id="duration" type="number" class="new btxt sinp" value="10"
+							onkeypress='return num(event)'><span class="btxt">Jahre</span>
+						<div class="duration-g"><label>Laufzeit</label></div>
+					</div class='page1-readonly'>
+					<div id="out-price" class="p1value btxt">243.999</div>
+					<div id="out-loan" class="p1rmn btxt">155.849</div>
+					<div id="out-profit" class="p1gain btxt">87.950</div>
+				</div>
+			</section>
+			<canvas id="canvas123" height="700" width="2200" style="display:none"></canvas>
+		</main>
+
+		<main class="pmain page2 " style="display:none">
+
+			<section class="page-2">
+				<div class=""></div>
+				<div class="p2-right" id='p2p1'>
+					<h2>Aufwendungen(einmalig)</h2>
+					<div class="inp2">
+						<label>Eigenkapital</label>
+						<div class="inwu">
+							<input id='capital-2' class='cust-i' onkeypress='return num(event)'>
+							<span>€</span>
+						</div>
+					</div>
+					<div class="inp2"><label>Kaufnebenkosten</label>
+						<div class="inwu">
+							<input id="sp1" class="cust-i" onkeypress='return num(event)'>
+							<span>€</span>
+						</div>
+					</div>
+					<div class="inp2"><label>Marklergebühr</label>
+						<div class="inwu">
+							<input id="sp2" class="cust-i" onkeypress='return num(event)'>
+							<span>€</span>
+						</div>
+					</div>
+					<div class="inp2"><label>Sonstiges</label>
+						<div class="inwu">
+							<input id="sp3" class="cust-i" onkeypress='return num(event)'><span>€</span>
+						</div>
+					</div>
+					<h2 class="mt-8">Aufwendungen (monatlich)</h2>
+					<div class="inp2"><label>Zins</label>
+						<div class="inwu">
+							<input id='interest' class="cust-i" value="333" onkeypress='return num(event)'>
+							<span>€</span>
+						</div>
+						<div class="inwu">
+							<input id='percent1' class="cust-i" value="2" onkeypress='return num(event)'>
+							<span>%</span>
+						</div>
+					</div>
+					<div class="inp2"><label>Tilgung</label>
+						<div class="inwu">
+							<input id='repayment' class="cust-i" value="333" onkeypress='return num(event)'>
+							<span>€</span>
+						</div>
+						<div class="inwu">
+							<input id="percent2" class="cust-i" value="2" onkeypress='return num(event)'>
+							<span>%</span>
+						</div>
+					</div>
+					<div class="inp2"><label>Verwaltung</label>
+						<div class="inwu">
+							<input id="admin" class="cust-i" onkeypress='return num(event)'>
+							<span>€</span>
+						</div>
+					</div>
+					<div class="inp2"><label>Sonstiges</label>
+						<div class="inwu">
+							<input id="misc1" class="cust-i" onkeypress='return num(event)'>
+							<span>€</span>
+						</div>
+					</div>
+					<div class="p2-sum">Gesamt
+						<span id="s21">666</span>€
+					</div>
+
+					<h2 class="mt-8">Einnahmen (monatlich)</h2>
+					<div class="inp2"><label>Miete</label>
+						<div class="inwu">
+							<input id="rent" class="cust-i"><span>€</span>
+						</div>
+						<div class="inwu">
+							<input id="r-v" class="cust-i">
+							<span>% Steigerung alle 3 Jahre</span>
+						</div>
+					</div>
+					<div class="inp2"><label>Steuervorteil</label>
+						<div class="inwu">
+							<input id="taxb" class="cust-i">
+							<span>€</span>
+						</div>
+						<div><button class="btn btn--plain" onclick="tax()">Jetzt berechnen</button></div>
+					</div>
+					<div class="p2-sum">Gesamt<span id="bill1-slide2"> 0</span>€</div>
+					<div class="p2-total"><em class="btxt"><span id="t-s2">666</span> €
+							Eigenanteil</em>für deinen Vermögensaufbau</div>
+
+
+					<div id="hid"><span>3 Jahre:<span id="b1"></span> € </span><span>
+							6 Jahre:<span id="b2"></span> € </span><span>9 Jahre:<span id="b3"></span>€</span>
+					</div>
+				</div>
+
+				<div class="p2-right" id="p2p2" style="display:none">
+					<h3>Steuervorteil berechnen</h3>
+					<div class="inp2"><label>Kaufpreis</label>
+						<div class="inwu">
+							<input type="number" class="cust-i cust-i-rd" id="p-p2" value="200.000" readonly>
+							<span>€</span>
+						</div>
+					</div>
+					<div class="inp2"><label>Grundstückswert</label>
+						<div class="inwu">
+							<input id="pv--price" class="cust-i" onkeypress='return num(event)'>
+							<span>€</span>
+						</div>
+						<div class="inwu">
+							<input id="pv--percent1" class="cust-i" onkeypress='return num(event)'>
+							<span>%</span>
+						</div>
+					</div>
+					<div class="inp2"><label>AfA-Prozentsatz</label>
+						<div class="inwu">
+							<input id="dp-price" class="cust-i" value="2" onkeypress='return num(event)'>
+							<span>%</span>
+						</div>
+					</div>
+					<div class="inp2"><label>AfA</label>
+						<div class="inwu">
+							<input type="number" class="cust-i cust-i-rd" id="a-pr" value="4"
+								readonly><span>€</span>
+						</div>
+					</div>
+					<div class="inp2"><label>Steuersatz ⌀</label>
+						<div class="inwu">
+							<input id="hpr" class="cust-i" onkeypress='return num(event)'>
+							<span>%</span>
+						</div>
+					</div>
+					<h3>Einnahmenübersicht (monatlich)</h3>
+					<div class="inp2"><label>Mieteinnahmen</label>
+						<div class="inwu">
+							<input type="number" class="cust-i cust-i-rd" id="rpr" readonly><span>€</span>
+						</div>
+					</div>
+
+					<div class="inp2"><label>Sonstige Einkommen</label>
+						<div class="inwu">
+							<input class="cust-i" id="opr" onkeypress='return num(event)'>
+							<span>€</span>
+						</div>
+					</div>
+					<h3>Ausgabenübersicht (monatlich)</h3>
+					<div class="inp2"><label>Zinsen</label>
+						<div class="inwu">
+							<input type="number" class="cust-i cust-i-rd" id="ipr" readonly><span>€</span>
+						</div>
+					</div>
+					<div class="inp2"><label>Verwaltung</label>
+						<div class="inwu">
+							<input type="number" class="cust-i cust-i-rd" id="adp" readonly>
+							<span>€</span>
+						</div>
+					</div>
+					<div class="inp2"><label>AfA</label>
+						<div class="inwu">
+							<input type="number" class="cust-i cust-i-rd" id="a-pr2" readonly><span>€</span>
+						</div>
+					</div>
+					<div class="inp2"><label>Sonstige</label>
+						<div class="inwu">
+							<input class="cust-i" id="oth" onkeypress='return num(event)'>
+							<span>€</span>
+						</div>
+					</div>
+					<div class="p2-sum p2-sum--large">ca. Steuervorteil: <span id="g-p">0</span> €</div>
+
+					<div class="btn-bar"><button class="btn" onclick="benefit()">Ubernehmen</button>
+						<button class="btn" onclick="benefit2()">Abbrechen</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+
+		<main class="pmain page3" style="display:none">
+
+			<section class="page-3">
+
+				<div class="nnn"></div>
+				<div class="p3-right">
+					<div class="p3-out">
+						<span class="txtr">Eigenanteil</span><span class="btxt txtr"
+							id="slide2-cont">666</span><span><span class="btxt">€</span></span>
+					</div>
+					<div class="p3-out"><span class="txtr">in</span><span class="btxt txtr"
+							id="year-span">10</span><span>Jahre</span>
+
+					</div>
+					<div id="upper-part" class="p3-out"></div>
+					<div class="p3-out"><span class="txtr">=</span>
+						<span class="btxt txtr" id="t-cnt">79.920</span><span class="btxt">€</span>
+					</div>
+					<div class="p3-sum"><span class="txtr p3s__g1">Eigenanteil</span><span class="btxt txtr p3s__g2"
+							id="t-cnt-part2">79.920 €</span><span class="p3s__g4">Vermögensaufbau</span><span
+							class="btxt p3s__g5" id="asct">87.950 €</span></div>
+					<div class="p3-total">Eigenkapitalrendite<em class="btxt" id="return">10
+							%</em></div>
+				</div>
+			</section>
+		</main>
+		<main class="pmain page4" style="display:none">
+
+			<section class="page-4">
+				<div class="nnn"></div>
+				<div class="p4-right">
+					<h2>Dein Immo-Sparschwein</h2>
+					<p class="piggy__grid">
+					<div class="page4-amend">
+						<div><b class="huge" id="pigrslt"> 79.920 € </b><br>Eigenanteil</div>
+						<div><b class="huge" id="pigrslt-final"> 8.030 € </b><br>Mieteinnahmen
+							Wertzuwachs</div>
+					</div>
+					</p>
+					<p class="rel"><img src="https://i.ibb.co/2gKCnWF/new-1.png" class="p4-piggybank"><em
+							class="piggy__text" id="profits-2">87.950
+							€</em>
+					</p>
+					<div id="slider">
+
+						<input type="range" id='rg1' class="cust-i" min="1" max="14" step='1' value="14"
+							onchange="sliderfun()">
+						<div class="sl_lab"><em id="rgvalue">10</em> <span id="rgyear">Jahre</span></div>
+					</div></div></section></main>
+	</div>
+	<div class="wrp-b">
+		<div class="pbtns"><button class="pbtn prev" id="prevBtn" onclick="plus(-1)" disabled>ZURÜCK<b></b></button>
+			<button class="ind ind--active" onclick="crnt(1)"></button>
+			<button class="ind" onclick="crnt(2)"></button>
+			<button class="ind" onclick="crnt(3)"></button>
+			<button class="ind" onclick="crnt(4)"></button>
+			<button class="pbtn next pbtn--active" id="nextBtn" onclick="plus(1)"><b></b>WEITER</button>
+		</div>
+	</div>
+</div>
+
+
+
+	<script src="asset.js"></script>
+</body>
