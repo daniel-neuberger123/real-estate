@@ -1192,6 +1192,7 @@ function C_res(hh) {
             console.log(Pq);
             profit = (parseInt(g(profit)) / (12 * timee)) * le[re - 1];
             profit = Math.round(profit);
+               Pq = Math.round(Pq);
             Pq = Pq.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
         }
 
