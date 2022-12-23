@@ -1,3 +1,5 @@
+
+jQuery.migrateEnablePatches( "self-closed-tags" );
 let slideIndex = 1;
 var flag = true;
 var duration = document.getElementById("duration").value;
