@@ -572,7 +572,7 @@ p {
     top: 0;
     bottom: 0;
     z-index: 3;
-    min-width: 1580px !important;
+    min-width: 90vw !important;
  }
  
 .page-2  {
@@ -1072,7 +1072,7 @@ p {
 .page-2 {
     display: grid;
     grid-template-columns: 6fr 4fr;
-    
+     margin-left: 30px;
     /* margin-top: -10vh; */
     top:0 !important;
     
