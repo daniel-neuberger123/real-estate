@@ -1072,7 +1072,7 @@ p {
 .page-2 {
     display: grid;
     grid-template-columns: 6fr 4fr;
-     margin-left: 140px;
+     margin-left: 150px;
     /* margin-top: -10vh; */
     top:0 !important;
     
@@ -1182,7 +1182,7 @@ p {
     display: grid;
     grid-template-columns: 6fr 4fr;
     /* margin-top: -60px; */
-    min-width: 70vw !important;
+    min-width: 65vw !important;
     top: 0;
 
 }
