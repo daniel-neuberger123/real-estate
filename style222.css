@@ -3,7 +3,12 @@
     --theme-colour-darker: #dfcb8d;
     --text-colour: #000;
 }
-
+#nextBtn{
+    display:flex;
+    text-align:center;
+    padding-left:1em;
+    position:relative;
+}
 body,
 button,
 html,
