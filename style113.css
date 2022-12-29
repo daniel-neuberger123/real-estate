@@ -861,7 +861,7 @@ p {
 
 .slide-Anim {
     transition: all 0.4s;
-    transform: translate(-50%, 0px);
+    transform: translate(-60%, 0px);
 
 }
 .slide-Anim{
@@ -891,7 +891,7 @@ p {
 }
 
 #canvas123 {
-    margin-left: 50%;
+    margin-left: 55%;
 }
 
 
