@@ -862,6 +862,7 @@ p {
 .slide-Anim {
     transition: all 0.4s;
     transform: translate(-60%, 0px);
+    min-width: 30vw !important;
 
 }
 .slide-Anim{
@@ -1185,7 +1186,8 @@ p {
     display: grid;
     grid-template-columns: 6fr 4fr;
     /* margin-top: -60px; */
-    min-width: 60vw !important;
+    min-width: 55vw !important;
+    min-height: 100px;
     top: 0;
 
 }
