@@ -1173,7 +1173,9 @@ p {
 
 
 }
-
+.head{
+padding-left:50px;
+}
 
 
 @media all and (max-width:959px) {
@@ -1192,7 +1194,7 @@ p {
     grid-template-columns: 6fr 4fr;
     /* margin-top: -60px; */
     min-width: 55vw !important;
-    min-height: 100px;
+    min-height: 180px;
     top: 0;
 z-index: 4;
 }
