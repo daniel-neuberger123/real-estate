@@ -1174,7 +1174,8 @@ p {
 
 }
 .head{
-padding-left:50px;
+padding-left:35vw;
+ position:relative;
 }
 
 
@@ -1209,7 +1210,7 @@ z-index: 4;
 
 .p4-piggybank {
     max-width: 100%;
-
+    min-width:50px;
 }
 
 .piggy__grid {
