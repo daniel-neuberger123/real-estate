@@ -37,6 +37,10 @@ function g(num) {
     var numb = Number(num.replace(/[^0-9|-]/g, ""));   //to remove .
     return numb;
 };
+function dis() {
+    var disc = document.getElementById("diss");
+    disc.style.display = 'none';
+}
 
 function Appreciation() {
 
