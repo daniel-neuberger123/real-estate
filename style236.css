@@ -586,6 +586,7 @@ p {
     bottom: 0;
     z-index: 3;
     min-width: 90vw !important;
+    margin-left:20px;
  }
  
 .page-2  {
@@ -1203,8 +1204,9 @@ margin-left:15vmax;
     grid-template-columns: 6fr 4fr;
     /* margin-top: -60px; */
     min-width: 55vw !important;
-    min-height: 180px;
+    min-height: 250px;
     top: 0;
+    padding-top:50px;
 z-index: 4;
 }
 
