@@ -613,19 +613,7 @@ p {
     box-sizing: border-box;
     min-height: 500px
 }
-@media all and (min-width:2200px) {
 
-    
-.page-2  {
- 
-  margin-top: -70vh; 
- }
- .page-4  {
- 
-    margin-top: -70vh !important; 
-   }
-
-}
 @media all and (min-width:960px) {
 
     .page-1 {
