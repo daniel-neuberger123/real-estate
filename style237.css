@@ -586,7 +586,7 @@ p {
     bottom: 0;
     z-index: 3;
     min-width: 90vw !important;
-    margin-left:20px;
+    margin-left:100px;
  }
  
 .page-2  {
@@ -1206,7 +1206,7 @@ margin-left:15vmax;
     min-width: 55vw !important;
     min-height: 250px;
     top: 0;
-    padding-top:50px;
+    padding-top:100px;
 z-index: 4;
 }
 
