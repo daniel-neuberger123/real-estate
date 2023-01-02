@@ -630,7 +630,7 @@ p {
 
     .page-1 {
         position: absolute;
-        margin-left:0px !important;
+        
     }
 
     .p1grid {
@@ -782,11 +782,13 @@ p {
     }
 
     .page-1 .capital-g {
-        margin-top: 0
+        margin-top: 0;
     }
 
     .page-1 {
         max-width: 70%;
+/*         min-width: 50vw !important; */
+        margin-left:0px !important;
         
     }
   
