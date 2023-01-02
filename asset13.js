@@ -38,7 +38,7 @@ function g(num) {
     return numb;
 };
 function dis() {
-    var disc = document.getElementById("diss");
+    var disc = document.getElementById("dis");
     disc.style.display = 'none';
 }
 
