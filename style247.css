@@ -1206,12 +1206,10 @@ margin-left:15vmax;
 
 @media all and (max-width:959px) {
 
-    .page-4 {
-        padding-bottom: 250px; 
-        min-width: 800px;
+        .page-4 {
+        margin-top: 0% !important;
+        min-width: 900px !important;
     }
-
- 
 }
 
 
