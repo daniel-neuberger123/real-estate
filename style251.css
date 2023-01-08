@@ -37,7 +37,7 @@ input::-webkit-inner-spin-button {
 }  */
 
 .page4-amend {
-    min-width:600px !important;
+    min-width:200px !important;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
