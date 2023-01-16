@@ -642,21 +642,32 @@ p {
     box-sizing: border-box;
     min-height: 500px
 }
+@media all and (max-width:1405px) {
+    .slide-Anim canvas {
+        width: 1500px !important;
+     
+    }
+}
 @media all and (max-width:1205px) {
 
     .slide-Anim {
-        width: 1200px !important;
+        width: 1700px !important;
     }
 }
 @media all and  (max-width:1290px) {
 
     .slide-Anim canvas {
         width: 1500px !important;
+     
     }
+
 }
+
 @media all and (max-width:1275px) {
+
     .slide-Anim canvas {
-        width: 1450px !important; 
+        width: 1500px !important;
+        
     }
 
 }
@@ -1004,7 +1015,9 @@ p {
     .nnn {
         display: none;
     }
-
+ .page-1{
+        max-width: 90% !important;  
+    }
     .page-1 h1 {
         text-align: center;
         margin-bottom: 2rem
