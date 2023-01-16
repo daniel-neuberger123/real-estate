@@ -930,8 +930,8 @@ p {
 
 .slide-Anim {
     transition: all 0.4s;
-    transform: translate(-60%, 0px);
-    min-width: 40vw !important;
+    transform: translate(-70%, 0px) !important;
+/*     min-width: 40vw !important; */
 
 }
 .slide-Anim{
