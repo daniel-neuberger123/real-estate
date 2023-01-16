@@ -930,7 +930,7 @@ p {
 
 .slide-Anim {
     transition: all 0.4s;
-    transform: translate(-70%, 0px) !important;
+    transform: translate(-65%, 0px) !important;
 /*     min-width: 40vw !important; */
 
 }
