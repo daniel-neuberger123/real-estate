@@ -546,6 +546,10 @@ p {
           padding-right: 5px;
     }
 
+    .head {
+        margin-left: 5vmax !important;
+    }
+
     .brand {
         font-size: 1.5rem
     }
@@ -700,12 +704,18 @@ p {
     .slide-Anim {
         width: 1360px !important;
     }
+     .piggy__text {
+       
+        font-size: 1.5rem;
+}
+
 }
 @media all and (max-width:1145px) {
 
     .slide-Anim{
         width: 1500px !important;
     }
+
 }
 @media all and (max-width:1115px) {
 
@@ -720,6 +730,9 @@ p {
         /* width: 1600px !important; */
         margin-left: -80px !important;
     }
+.page-2{
+    margin-left: 100px !important;
+}
 }
 @media all and (max-width:1018px) {
 
@@ -733,6 +746,8 @@ p {
     .slide-Anim {
         /* width: 1600px !important; */
         margin-left: -120px !important;
+    }.page-2{
+        margin-left: 180px !important;
     }
 }
 @media all and (min-height:700px) and (max-width:1000px) {
@@ -903,7 +918,7 @@ p {
 
     .page-1 {
         max-width: 70%;
-/*         min-width: 50vw !important; */
+        min-height: 100% !important;
         margin-left:0px !important;
         
     }
@@ -1151,6 +1166,7 @@ p {
 }
 
 @media all and (max-width:639px) {
+
     .p1grid {
         grid-template-columns: repeat(6, 1fr);
         padding-top: 1rem;
@@ -1201,7 +1217,7 @@ p {
     }
 
     .p1gain {
-        grid-column: 3/span 2;
+        grid-column: 2/span 2;
         grid-row: 4;
         justify-self: center
     }
@@ -1211,7 +1227,7 @@ p {
 .page-2 {
     display: grid;
     grid-template-columns: 6fr 4fr;
-    margin-left: 185px;
+    margin-left: 205px;
     /* margin-top: -10vh; */
     top:0 !important;
     
