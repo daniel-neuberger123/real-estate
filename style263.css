@@ -731,7 +731,7 @@ p {
         margin-left: -80px !important;
     }
 .page-2{
-    margin-left: 100px !important;
+    margin-left: 200px !important;
 }
 }
 @media all and (max-width:1018px) {
@@ -918,7 +918,7 @@ p {
 
     .page-1 {
         max-width: 70%;
-        min-height: 100% !important;
+        min-height: 80% !important;
         margin-left:0px !important;
         
     }
