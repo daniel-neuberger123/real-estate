@@ -533,6 +533,10 @@ p {
     .discp {
  max-height: 70vh !important;
 }
+.piggy__text {
+    right: 37% !important;
+font-size: 1.5rem !important;
+}
 }
 
 @media all and (max-width:639px) {
@@ -652,9 +656,9 @@ p {
     }
     .p4-piggybank {
         max-width: 100%;
-        min-width:200px !important;
+        min-width: 280px !important;
     }
-   
+    
 } 
 @media all and (max-width:978px) {
     .slide-Anim {
