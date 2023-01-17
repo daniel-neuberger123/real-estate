@@ -648,7 +648,7 @@ p {
      
     }
 }
-@media all and (max-width:1205px) {
+@media all and (max-width:1255px) {
 
     .slide-Anim {
         width: 1700px !important;
@@ -681,8 +681,8 @@ p {
 @media all and (min-width:960px) {
 
     .page-1 {
-        position: absolute;
-        
+        position: absolute !important;
+        margin-left:0px !important;
     }
 
     .p1grid {
@@ -1011,12 +1011,13 @@ p {
     }
 }
 
-@media all and (max-width:959px) {
+@media all and (max-width:989px) {
     .nnn {
         display: none;
     }
  .page-1{
-        max-width: 90% !important;  
+        max-width: 50% !important;
+        
     }
     .page-1 h1 {
         text-align: center;
@@ -1032,7 +1033,7 @@ p {
     }
 
     .p1price {
-        grid-column: 1/span 1
+        grid-column: 1/span 1;
     }
 
     .p1dur {
