@@ -16,8 +16,8 @@
 		<div class="discp">
 			<div id="para">
 				</div>
-			<div class="dis__btnbar"><button class="btn" onclick="dis()">Akzeptieren</button><a class="btn"
-					href="https://www.grauhirsch.de/">Ablehnen</a></div>
+			<div class="dis__btnbar"><button class="btn" onclick="dis()">Akzeptieren</button><button class="btn"
+					href="https://www.grauhirsch.de/">Ablehnen</button></div>
 		</div>
 	</div>
 	<header><span class="product"><em>IMMO</em>RECHNER</span></header>
@@ -29,39 +29,35 @@
 					<canvas id="canvas1" height="700" width="2000"></canvas>
 					<div class="p1price p1-fade">
 						<div class="price-g"><label><em><span class="arrow">
-
-							<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 12" version="1.1">
-								<path fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" d="M 1,6 L 15,6 M 11,1 L 15,6 L 11,11"></path>
-							</svg>
-							</span></em>Kaufpreis</label>
-							<input id="price" class="new btxt wide" value="200.000" onkeypress='return n(event)'>
+	</span></em>Kaufpreis</label>
+							<input id="price" class="new btxt wide" value="200.000" onkeypress='return num(event)'>
 							<span class="btxt">€</span>
 						</div>
 						<div class="capital-g"><label><em><span class="arrow">
-
-							<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 12" version="1.1">
-								<path fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" d="M 1,6 L 15,6 M 11,1 L 15,6 L 11,11"></path>
-							</svg>
 							</span></em>Eigenkapital</label>
-							<input id="capital" class="new btxt wide" value="0" onkeypress='return n(event)'><span
+							<input id="capital" class="new btxt wide" value="0" onkeypress='return num(event)'><span
 								class="btxt">€</span>
 						</div>
 					</div>
 					<div class="p1amort p1-fade">
-						<input id="amrt" type="number" class="new  btxt sinp" value="2" onkeypress='return n(event)'>
+						<input id="amrt" class="new btxt sinp" value="2" onkeypress='return num(event)'>
 						<span class="btxt">%</span>
 						<br><br><label>Tilgung<br> p.A.</label>
 					</div>
 					<div class="p1app p1-fade">
-						<input id="aprct" type="number" class="new btxt sinp" value="2"
-							onkeypress='return n(event)'><span class="btxt">%</span><br><br><label>Wertentwicklung<br>
+						<input id="aprct" class="new btxt sinp" value="2"
+							onkeypress='return num(event)'><span class="btxt">%</span><br><br><label>Wertentwicklung<br>
 							p.A.</label>
 
 					</div>
 					<div class="p1dur p1-fade">
-						<input id="duration" type="number" class="new btxt sinp" value="10"
-							onkeypress='return n(event)'><span class="btxt">Jahre</span>
+						<input id="duration" class="new btxt sinp" value="10"
+							onkeypress='return num(event)'><span class="btxt">Jahre</span>
 						<div class="duration-g"><label><em><span class="arrow">
+
+							<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 12" version="1.1">
+								<path fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" d="M 1,6 L 15,6 M 11,1 L 15,6 L 11,11"></path>
+							</svg>
 							</span></em>Laufzeit</label></div>
 
 					</div class='page1-readonly'>
@@ -81,57 +77,57 @@
 					<div class="inp2">
 						<label>Eigenkapital</label>
 						<div class="inwu">
-							<input id='capital-2' class='cust-i'  onkeypress='return n(event)'>
+							<input id='capital-2' class='cust-i' value='0' onkeypress='return num(event)'>
 							<span>€</span>
 						</div>
 					</div>
 					<div class="inp2"><label>Kaufnebenkosten</label>
 						<div class="inwu">
-							<input id="sp1" class="cust-i"  onkeypress='return n(event)'>
+							<input id="sp1" class="cust-i" value='0' onkeypress='return num(event)'>
 							<span>€</span>
 						</div>
 					</div>
 					<div class="inp2"><label>Marklergebühr</label>
 						<div class="inwu">
-							<input id="sp2" class="cust-i"  onkeypress='return n(event)'>
+							<input id="sp2" class="cust-i" value='0' onkeypress='return num(event)'>
 							<span>€</span>
 						</div>
 					</div>
 					<div class="inp2"><label>Sonstiges</label>
 						<div class="inwu">
-							<input id="sp3" class="cust-i"  onkeypress='return n(event)'><span>€</span>
+							<input id="sp3" class="cust-i" value='0' onkeypress='return num(event)'><span>€</span>
 						</div>
 					</div>
 					<h2 class="mt-8">Aufwendungen (monatlich)</h2>
 					<div class="inp2"><label>Zins</label>
 						<div class="inwu">
-							<input id='interest' class="cust-i" value="333" onkeypress='return n(event)'>
+							<input id='interest' class="cust-i" value="333" onkeypress='return num(event)'>
 							<span>€</span>
 						</div>
 						<div class="inwu">
-							<input id='percent1' class="cust-i" value="2" onkeypress='return n(event)'>
+							<input id='percent1' class="cust-i" value="2" onkeypress='return num(event)'>
 							<span>%</span>
 						</div>
 					</div>
 					<div class="inp2"><label>Tilgung</label>
 						<div class="inwu">
-							<input id='repayment' class="cust-i" value="333" onkeypress='return n(event)'>
+							<input id='repayment' class="cust-i" value="333" onkeypress='return num(event)'>
 							<span>€</span>
 						</div>
 						<div class="inwu">
-							<input id="percent2" class="cust-i" value="2" onkeypress='return n(event)'>
+							<input id="percent2" class="cust-i" value="2" onkeypress='return num(event)'>
 							<span>%</span>
 						</div>
 					</div>
 					<div class="inp2"><label>Verwaltung</label>
 						<div class="inwu">
-							<input id="admin" class="cust-i"  onkeypress='return n(event)'>
+							<input id="admin" class="cust-i" value='0' onkeypress='return num(event)'>
 							<span>€</span>
 						</div>
 					</div>
 					<div class="inp2"><label>Sonstiges</label>
 						<div class="inwu">
-							<input id="misc1" class="cust-i"  onkeypress='return n(event)'>
+							<input id="misc1" class="cust-i" value='0' onkeypress='return num(event)'>
 							<span>€</span>
 						</div>
 					</div>
@@ -142,19 +138,19 @@
 					<h2 class="mt-8">Einnahmen (monatlich)</h2>
 					<div class="inp2"><label>Miete</label>
 						<div class="inwu">
-							<input id="rent" class="cust-i"  onkeypress='return n(event)'><span>€</span>
+							<input id="rent" class="cust-i" value='0' onkeypress='return num(event)'><span>€</span>
 						</div>
 						<div class="inwu">
-							<input id="r-v" class="cust-i"  onkeypress='return n(event)'>
+							<input id="r-v" class="cust-i" value='0' onkeypress='return num(event)'>
 							<span>% <span id="sst">Steigerung alle 3 Jahre</span></span>
 						</div>
 					</div>
 					<div class="inp2"><label>Steuervorteil</label>
 						<div class="inwu">
-							<input id="taxb" class="cust-i"  onkeypress='return n(event)'>
+							<input id="taxb" class="cust-i" value='0' onkeypress='return num(event)'>
 							<span>€</span>
 						</div>
-						<div><button class="btn btn--plain" onclick="tax()">Jetzt berechnen</button></div>
+						<div><a class="btn--plain" onclick="tax()">Jetzt berechnen</a></div>
 					</div>
 					<div class="p2-sum">Gesamt:<span id="bill1-slide2"> 0 </span>€</div>
 					<div class="p2-total"><em class="btxt"><span id="t-s2">666</span> €
@@ -166,69 +162,70 @@
 					<h3>Steuervorteil berechnen</h3>
 					<div class="inp2"><label>Kaufpreis</label>
 						<div class="inwu">
-							<input type="number" class="cust-i cust-i-rd" id="p-p2" value="200.000" readonly>
+							<input class="cust-i cust-i-rd" id="p-p2" value="200.000" readonly>
 							<span>€</span>
 						</div>
+						
 					</div>
 					<div class="inp2"><label>Grundstückswert</label>
 						<div class="inwu">
-							<input id="pv--price" class="cust-i" onkeypress='return n(event)'>
+							<input id="pv--price" class="cust-i" value='0' onkeypress='return num(event)'>
 							<span>€</span>
 						</div>
 						<div class="inwu">
-							<input id="pv--percent1" class="cust-i" onkeypress='return n(event)'>
+							<input id="pv--percent1" class="cust-i" value='0' onkeypress='return num(event)'>
 							<span>%</span>
 						</div>
 					</div>
 					<div class="inp2"><label>AfA-Prozentsatz</label>
 						<div class="inwu">
-							<input id="dp-price" class="cust-i" value="2" onkeypress='return n(event)'>
+							<input id="dp-price" class="cust-i" value="2" onkeypress='return num(event)'>
 							<span>%</span>
 						</div>
 					</div>
 					<div class="inp2"><label>AfA</label>
 						<div class="inwu">
-							<input type="number" class="cust-i cust-i-rd" id="a-pr" value="4" readonly><span>€</span>
+							<input class="cust-i cust-i-rd" id="a-pr" value="4" readonly><span>€</span>
 						</div>
 					</div>
 					<div class="inp2"><label>Steuersatz ⌀</label>
 						<div class="inwu">
-							<input id="hpr" class="cust-i" onkeypress='return n(event)'>
+							<input id="hpr" class="cust-i" value='0' onkeypress='return num(event)'>
 							<span>%</span>
 						</div>
 					</div>
 					<h3>Einnahmenübersicht (monatlich)</h3>
 					<div class="inp2"><label>Mieteinnahmen</label>
 						<div class="inwu">
-							<input type="number" class="cust-i cust-i-rd" id="rpr" readonly><span>€</span>
+							<input class="cust-i cust-i-rd" id="rpr" value='0' readonly><span>€</span>
 						</div>
 					</div>
 					<div class="inp2"><label>Sonstige Einkommen</label>
 						<div class="inwu">
-							<input class="cust-i" id="opr" onkeypress='return n(event)'>
+							<input class="cust-i" id="opr" value='0' onkeypress='return num(event)'>
 							<span>€</span>
 						</div>
 					</div>
 					<h3>Ausgabenübersicht (monatlich)</h3>
 					<div class="inp2"><label>Zinsen</label>
 						<div class="inwu">
-							<input type="number" class="cust-i cust-i-rd" id="ipr" readonly><span>€</span>
+							<input type="number" value='0' class="cust-i cust-i-rd" id="ipr" readonly><span>€</span>
 						</div>
 					</div>
 					<div class="inp2"><label>Verwaltung</label>
 						<div class="inwu">
-							<input type="number" class="cust-i cust-i-rd" id="adp" readonly>
+							<input type="number" value='0' class="cust-i cust-i-rd" id="adp" readonly>
 							<span>€</span>
 						</div>
 					</div>
 					<div class="inp2"><label>AfA</label>
 						<div class="inwu">
-							<input type="number" class="cust-i cust-i-rd" id="a-pr2" readonly><span>€</span>
+							<input type="number" value='0' class="cust-i cust-i-rd" id="a-pr2" readonly><span>€</span>
 						</div>
 					</div>
 					<div class="inp2"><label>Sonstige</label>
 						<div class="inwu">
-							<input class="cust-i" id="oth" onkeypress='return n(event)'>
+							<input class="cust-i" value='0' id="oth" onkeypress='return num(event)'>
 							<span>€</span>
 						</div>
 					</div>
@@ -248,8 +245,8 @@
 					<h2>Dein Immo-Sparschwein</h2>
 					<p class="piggy__grid">
 					<div class="page4-amend">
-						<div><b class="huge" id="pigrslt">79.920 € </b><br>Eigenanteil</div>
-						<div><b class="huge" id="pigrslt-final">8.030 € </b><br>Mieteinnahmen
+						<div><b class="huge" id="pigrslt"> 79.920 € </b><br>Eigenanteil</div>
+						<div><b class="huge" id="pigrslt-final"> 8.030 € </b><br>Mieteinnahmen<br>
 							Wertzuwachs</div>
 					</div>
 					</p>
@@ -271,9 +268,13 @@
 			<button class="ind ind--active" onclick="crnt(1)"></button>
 			<button class="ind" onclick="crnt(2)"></button>
 			<button class="ind" onclick="crnt(3)"></button>
+			<!-- <button class="ind" onclick="crnt(4)"></button> -->
 			<button class="pbtn next pbtn--active" id="nextBtn" onclick="plus(1)"><b></b>WEITER</button>
 		</div>
 	</div>
 </div>
-<script src="https://cdn.jsdelivr.net/gh/daniel-neuberger123/real-estate/asset.js"></script>
+
+
+
+<script src="asset.js"></script>
 </body>
